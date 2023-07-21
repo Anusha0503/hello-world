@@ -223,5 +223,17 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
-
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-16-151-releases</name>
+        <url>http://34.235.151.213:8081/artifactory/libs-release-local</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-16-151-snapshots</name>
+        <url>http://34.235.151.213:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+</distributionManagement>
+         
 </project>
