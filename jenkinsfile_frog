@@ -1,7 +1,7 @@
 node {
 
      stage('checkout'){
-            git branch: 'main', credentialsId: 'gitcredentials', url: 'https://github.com/Anusha0503/sample-java-app.git'
+            git branch: 'main', credentialsId: 'gitcredentials', url: 'https://github.com/Anusha0503/hello-world.git'
      } 
      stage('build'){
             withMaven(globalMavenSettingsConfig: '', jdk: 'java', maven: 'maven', mavenSettingsConfig: '', traceability: true) {
